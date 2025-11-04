@@ -41,4 +41,21 @@ export default {
     dark: "Dark Mode",
     home: "Home",
   },
+  footer: {
+    title: "PROJECT: RESEARCH AND TRAIN AI MODELS FOR ORGANIC CHEMICAL REACTION PREDICTION",
+    studentInfoTitle: "Student Information",
+    student1Label: "Full Name of Student 1: ",
+    student2Label: "Full Name of Student 2: ",
+    fieldLabel: "Field of Study: ",
+    field: {
+      ai: "Artificial Intelligence",
+      chemistry: "Chemistry",
+    },
+    schoolLabel: "School: ",
+    supervisorTitle: "Supervisor Information",
+    supervisorNameLabel: "Supervisor Name: ",
+    supervisorUnitLabel: "Supervisor Institution: ",
+    supervisorUnit: "Institute of Information Technology & Communications, Military Technical Academy",
+    copyright: "Institute of Information Technology & Communications, Military Technical Academy",
+  }
 };

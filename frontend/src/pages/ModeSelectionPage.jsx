@@ -27,7 +27,7 @@ export default function ModeSelectionPage() {
       <Paper
         elevation={8}
         sx={{
-          borderRadius: 4,
+          borderRadius: 2,
           p: 5,
           textAlign: "center",
           width: "90%",
@@ -36,7 +36,7 @@ export default function ModeSelectionPage() {
         }}
       >
         <Typography
-          variant="h3"
+          variant="h4"
           sx={{
             fontWeight: 700,
             color: "primary.main",
@@ -74,9 +74,9 @@ export default function ModeSelectionPage() {
             size="large"
             startIcon={<ScienceIcon />}
             sx={{
-              width: 300,
-              height: 60,
-              borderRadius: 3,
+              width: 320,
+              height: 40,
+              borderRadius: 1,
               textTransform: "none",
               fontSize: "1.1rem",
               fontWeight: 600,
@@ -92,9 +92,9 @@ export default function ModeSelectionPage() {
             size="large"
             startIcon={<ShowChartIcon />}
             sx={{
-              width: 300,
-              height: 60,
-              borderRadius: 3,
+              width: 320,
+              height: 40,
+              borderRadius: 1,
               textTransform: "none",
               fontSize: "1.1rem",
               fontWeight: 600,

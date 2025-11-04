@@ -42,4 +42,21 @@ export default {
     dark: "Chế độ tối",
     home: "Trang chủ",
   },
+  footer: {
+    title: "ĐỀ TÀI: NGHIÊN CỨU, HUẤN LUYỆN AI PHỤC VỤ MÔ HÌNH DỰ BÁO PHẢN ỨNG HÓA HỌC HỮU CƠ",
+    studentInfoTitle: "Thông tin học sinh",
+    student1Label: "Họ và tên Học sinh 1: ",
+    student2Label: "Họ và tên Học sinh 2: ",
+    fieldLabel: "Lĩnh vực:",
+    field: {
+      ai: "Trí tuệ nhân tạo",
+      chemistry: "Hóa học",
+    },
+    schoolLabel: "Trường: ",
+    supervisorTitle: "Thông tin giáo viên hướng dẫn",
+    supervisorNameLabel: "Họ và tên: ",
+    supervisorUnitLabel: "Đơn vị công tác: ",
+    supervisorUnit: "Viện Công nghệ Thông tin & Truyền thông, Học viện Kỹ thuật quân sự",
+    copyright: "Viện Công nghệ Thông tin & Truyền thông, Học viện Kỹ thuật quân sự",
+  },
 };
