@@ -18,14 +18,12 @@ export default function PredictorPage() {
   const [prediction, setPrediction] = useState("");
   const [loading, setLoading] = useState(false);
 
-  console.log("Backend URL:", `http://${process.env.VITE_BACKEND_HOST}:${process.env.VITE_BACKEND_PORT}/predict`);
-  console.log("Backend URL:", `http://${import.meta.env.VITE_BACKEND_HOST}:${import.meta.env.VITE_BACKEND_PORT}/predict`);
   const handlePredict = async () => {
     setLoading(true);
     try {
       // Placeholder for API callgit
       const query = new URLSearchParams({ reactants: tempReactant }).toString();
-      const response = await fetch(`http://${process.env.VITE_BACKEND_HOST}:${process.env.VITE_BACKEND_PORT}/predict?${query}`, {
+      const response = await fetch(`http://${import.meta.env.VITE_BACKEND_HOST}:${import.meta.env.VITE_BACKEND_PORT}/predict?${query}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });
