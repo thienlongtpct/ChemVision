@@ -23,7 +23,7 @@ export default function PredictorPage() {
     try {
       // Placeholder for API call
       const query = new URLSearchParams({ reactants: tempReactant }).toString();
-      const response = await fetch(`http://${process.env.BACKEND_HOST}:${process.env.BACKEND_PORT}/predict?${query}`, {
+      const response = await fetch(`http://${import.meta.env.BACKEND_HOST}:${import.meta.env.BACKEND_PORT}/predict?${query}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });
