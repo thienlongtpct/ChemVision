@@ -23,7 +23,10 @@ export default function PredictorPage() {
     try {
       // Placeholder for API callgit
       const query = new URLSearchParams({ reactants: tempReactant }).toString();
-      const response = await fetch(`http://${import.meta.env.VITE_BACKEND_HOST}:${import.meta.env.VITE_BACKEND_PORT}/predict?${query}`, {
+      const host = import.meta.env.VITE_BACKEND_HOST || "localhost";
+      const port = import.meta.env.VITE_BACKEND_PORT;
+      const baseUrl = port ? `http://${host}:${port}` : `https://${host}`;
+      const response = await fetch(`${baseUrl}/predict?${query}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });
