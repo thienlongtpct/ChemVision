@@ -12,7 +12,7 @@ export default function Footer() {
     <Box
       component="footer"
       sx={() => ({
-        py: { xs: 2, md: 4 },
+        py: { xs: 2 },
         bgcolor: theme.palette.mode === "dark" ? theme.palette.background.paper : theme.palette.primary.main,
         color: "#ffffff !important",
       })}
@@ -28,8 +28,6 @@ export default function Footer() {
         >
           {t("footer.title")}
         </Typography>
-
-        <Divider sx={{ my: 2 }} />
 
         {/* Information Grid */}
         <Box display="flex" flexDirection={{ xs: "column", md: "row" }} gap={4}>
@@ -121,8 +119,6 @@ export default function Footer() {
             </Box>
           </Box>
         </Box>
-
-        <Divider sx={{ my: 2 }} />
 
         {/* Footer note */}
         <Typography

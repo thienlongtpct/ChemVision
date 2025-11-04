@@ -63,42 +63,27 @@ export default function VisualizerPage() {
 
   return (
     <Box
-      sx={{
-        minHeight: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        py: 6,
-        px: 3,
-      }}
+      p={4}
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      flexGrow={1}
       bgcolor="background.default"
     >
       <Typography
         variant="h4"
-        sx={{ mb: 1, fontWeight: "bold", color: "text.primary" }}
+        sx={{ fontWeight: "bold", color: "text.primary" }}
+        mb={2}
       >
         {t?.visualize.title}
       </Typography>
-      <Typography
-        variant="subtitle1"
-        sx={{
-          mb: 4,
-          color: "text.secondary",
-          maxWidth: 600,
-          textAlign: "center",
-        }}
-      >
-        {t?.visualize.description}
-      </Typography>
 
       <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          gap: 2,
-          alignItems: "stretch",
-          mb: 4,
-        }}
+        display="flex"
+        flexDirection="row"
+        gap={2}
+        alignItems="stretch"
+        mb={4}
       >
         <TextField
           label={""}
@@ -150,13 +135,13 @@ export default function VisualizerPage() {
       </Box>
 
       {submitted && smiles && (
-        <Card sx={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 1 }}>
+        <Card sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <MoleculeViewer
             smiles={smiles}
             darkMode={isDarkMode}
             handleError={handleError}
-            height={500} 
-            width={1200}
+            height={250} 
+            width={800}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
