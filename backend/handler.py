@@ -1,7 +1,6 @@
-from app import APP  # Import your Flask app
-from awslambdaric.lambda_handler import lambda_handler
+import serverless_wsgi
+from app import APP
 
 
-# This tells Lambda to use your Flask app as the HTTP handler
 def handler(event, context):
-    return lambda_handler(event, context, APP)
+    return serverless_wsgi.handle_request(APP, event, context)

@@ -16,3 +16,6 @@ Icon?
 .fseventsd
 .VolumeIcon.icns
 .TemporaryItems
+
+package/
+function.zip
