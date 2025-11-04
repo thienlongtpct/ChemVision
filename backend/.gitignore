@@ -1,0 +1,18 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# macOS artifacts
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.DocumentRevisions-V100
+.fseventsd
+.VolumeIcon.icns
+.TemporaryItems
