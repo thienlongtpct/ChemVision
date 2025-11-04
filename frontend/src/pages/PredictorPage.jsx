@@ -18,6 +18,9 @@ export default function PredictorPage() {
   const [prediction, setPrediction] = useState("");
   const [loading, setLoading] = useState(false);
 
+  console.log("Backend host and port:", import.meta.env.BACKEND_HOST, import.meta.env.BACKEND_PORT);
+  console.log("Backend host and port:", process.env.BACKEND_HOST, process.env.BACKEND_PORT);
+  
   const handlePredict = async () => {
     setLoading(true);
     try {
