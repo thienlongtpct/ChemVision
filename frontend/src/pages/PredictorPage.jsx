@@ -18,15 +18,12 @@ export default function PredictorPage() {
   const [prediction, setPrediction] = useState("");
   const [loading, setLoading] = useState(false);
 
-  console.log("Backend host and port:", import.meta.env.BACKEND_HOST, import.meta.env.BACKEND_PORT);
-  console.log("Backend host and port:", process.env.BACKEND_HOST, process.env.BACKEND_PORT);
-  
   const handlePredict = async () => {
     setLoading(true);
     try {
-      // Placeholder for API call
+      // Placeholder for API callgit
       const query = new URLSearchParams({ reactants: tempReactant }).toString();
-      const response = await fetch(`http://${import.meta.env.BACKEND_HOST}:${import.meta.env.BACKEND_PORT}/predict?${query}`, {
+      const response = await fetch(`http://${process.env.VITE_BACKEND_HOST}:${process.env.VITE_BACKEND_PORT}/predict?${query}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });
